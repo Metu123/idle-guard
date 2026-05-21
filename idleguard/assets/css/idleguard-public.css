@@ -1,0 +1,8 @@
+/* Minimal modal styling, dark-mode friendly */
+.idleguard-modal{position:fixed;inset:0;background:rgba(0,0,0,0.6);display:flex;align-items:center;justify-content:center;z-index:99999}
+.idleguard-modal-inner{background:#fff;color:#111;padding:24px;border-radius:8px;max-width:420px;width:90%;box-shadow:0 8px 30px rgba(0,0,0,0.2);text-align:center}
+@media (prefers-color-scheme:dark){.idleguard-modal-inner{background:#111;color:#eee}}
+.idleguard-actions{margin-top:16px;display:flex;gap:8px;justify-content:center}
+.idleguard-modal .button{padding:8px 14px;border-radius:6px;border:none;cursor:pointer}
+.idleguard-modal .button-secondary{background:#eee}
+@media (prefers-color-scheme:dark){.idleguard-modal .button-secondary{background:#222;color:#fff}}
